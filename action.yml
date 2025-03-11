@@ -1,0 +1,12 @@
+name: 'Merge Guard'
+description: 'safe guard PR merges'
+
+inputs:
+  silent:
+    description: 'Skip all checks and show warning'
+    required: false
+    default: 'false'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js' 
